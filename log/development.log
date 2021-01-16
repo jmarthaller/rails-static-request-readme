@@ -1101,3 +1101,273 @@ Processing by StaticController#about as HTML
 Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-12-09 17:13:16 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 40ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-09 17:13:23 -0500
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.4ms)
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-09 17:13:57 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-09 17:14:01 -0500
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-09 17:14:20 -0500
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (1.3ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-09 17:14:40 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.6ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-09 17:15:13 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.4ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jacobmarthaller/Flatiron/code/Phase-Two/rails-static-request-readme/app/views/static/some_page.html.erb:6: syntax error, unexpected '<'
+...reeze;@output_buffer.append=( <h1>And will this render</h1> ...
+...                              ^
+/Users/jacobmarthaller/Flatiron/code/Phase-Two/rails-static-request-readme/app/views/static/some_page.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+...ut_buffer.append=( <h1>And will this render</h1> );@output_b...
+...                           ^~~~
+/Users/jacobmarthaller/Flatiron/code/Phase-Two/rails-static-request-readme/app/views/static/some_page.html.erb:9: unterminated regexp meets end of file
+          end
+              ^
+/Users/jacobmarthaller/Flatiron/code/Phase-Two/rails-static-request-readme/app/views/static/some_page.html.erb:9: unmatched close parenthesis: /h1> );@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+/m
+/Users/jacobmarthaller/Flatiron/code/Phase-Two/rails-static-request-readme/app/views/static/some_page.html.erb:9: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/static/some_page.html.erb:6: syntax error, unexpected '<'
+app/views/static/some_page.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/static/some_page.html.erb:9: unterminated regexp meets end of file
+app/views/static/some_page.html.erb:9: unmatched close parenthesis: /h1> );@output_buffer.to_s
+app/views/static/some_page.html.erb:9: syntax error, unexpected end-of-input, expecting ')'
+app/controllers/static_controller.rb:3:in `about'
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.1ms)
+Started GET "/about" for ::1 at 2020-12-09 17:16:28 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.9ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (You invoked render but did not give any of :partial, :template, :inline, :file, :plain, :html, :text or :body option.):
+    3: 
+    4: 
+    5: 
+    6: <%= And will this render %>
+  
+app/views/static/some_page.html.erb:6:in `_app_views_static_some_page_html_erb__4254790027096499468_70291474466200'
+app/controllers/static_controller.rb:3:in `about'
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.0ms)
+Started GET "/about" for ::1 at 2020-12-09 17:17:12 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (2.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (You invoked render but did not give any of :partial, :template, :inline, :file, :plain, :html, :text or :body option.):
+    3: 
+    4: 
+    5: 
+    6: <%= And will this render %>
+  
+app/views/static/some_page.html.erb:6:in `_app_views_static_some_page_html_erb__4254790027096499468_70291495350560'
+app/controllers/static_controller.rb:3:in `about'
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.9ms)
+Started GET "/about" for ::1 at 2020-12-09 17:17:55 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (1.3ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (You invoked render but did not give any of :partial, :template, :inline, :file, :plain, :html, :text or :body option.):
+    3: 
+    4: 
+    5: 
+    6: #<%= And will this render %>
+  
+app/views/static/some_page.html.erb:6:in `_app_views_static_some_page_html_erb__4254790027096499468_70291494887260'
+app/controllers/static_controller.rb:3:in `about'
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.2ms)
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.6ms)
+Started GET "/about" for ::1 at 2020-12-09 17:19:14 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.5ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-09 17:19:36 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.3ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-09 17:19:44 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.3ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-09 17:23:56 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.4ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-09 17:24:03 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-10 10:50:31 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (3.0ms)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-10 10:53:43 -0500
+Processing by StaticController#about as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template static/about_page, application/about_page with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee]}. Searched in:
+  * "/Users/jacobmarthaller/Flatiron/code/Phase-Two/rails-static-request-readme/app/views"
+):
+  
+app/controllers/static_controller.rb:3:in `about'
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jacobmarthaller/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (30.2ms)
+Started GET "/about" for ::1 at 2020-12-10 10:54:14 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.4ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-10 10:54:21 -0500
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-10 10:54:22 -0500
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.7ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-10 10:54:29 -0500
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.9ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-10 10:55:03 -0500
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.3ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-10 10:55:42 -0500
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-10 10:55:46 -0500
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.3ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-12-10 10:55:55 -0500
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.4ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
